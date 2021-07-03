@@ -21,6 +21,10 @@ class TwitterFollowerImageSource implements ImageSource
             'count' => $limit
         ]);
 
+        if (isset($followers->errors)) {
+            throw new \RuntimeException($followers->errors[0]->message);
+        }
+
         if (!isset($followers->users)) {
             return [];
         }
