@@ -4,8 +4,8 @@
 /app/run-once.sh
 
 # Add to crontab
-echo "*/5 * * * * /app/run-once.sh" > /etc/crontabs/root
+echo "*/10 * * * * /app/run-once.sh" > /etc/crontabs/root
 crontab -l
 
-# Run again every 5 minutes
+# Run again every few minutes
 crond -f -d 6
