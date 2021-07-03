@@ -7,4 +7,6 @@ return [
     'twitter_token_secret' => $_ENV['TWITTER_USER_ACCESS_TOKEN_SECRET'],
 
     'github_api_bearer' => $_ENV['GITHUB_API_BEARER_TOKEN'],
+
+    'default_template' => 'app/Resources/templates/cover_sponsors2.json',
 ];
