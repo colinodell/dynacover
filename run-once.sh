@@ -1,4 +1,4 @@
 #!/bin/sh
 
 date
-/usr/local/bin/php /app/dynacover cover update
+/usr/bin/env php /app/dynacover cover update

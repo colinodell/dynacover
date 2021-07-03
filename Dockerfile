@@ -49,4 +49,4 @@ RUN set -ex \
  && ./composer.phar install -a --no-dev --prefer-dist \
  && rm -rf composer.phar
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/app/run-once.sh"]
