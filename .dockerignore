@@ -1,4 +1,5 @@
 /.idea
+/.git
 /vendor
 /latest_header.png
 /docker-compose.yml
